@@ -17,3 +17,31 @@ contract Counter {
     }
 }
 
+
+
+
+
+
+
+
+
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.4.16 < 0.9.0;
+
+contract Counter {
+    uint public count = 0; //remix will automatically create a function called count 
+    //which will return the value of count
+
+    //  constructor () public  {
+    //      count = 0;
+    //  } //not required if we set the value during declaration
+
+    // function getCount() public view returns (uint) {
+    //     return count;
+    // }
+
+    function incrementCount() public {
+       // count = count + 1;
+       count++;
+    }
+}
